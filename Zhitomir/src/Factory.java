@@ -8,12 +8,14 @@ public class Factory {
 	Robot [] h1;
 	Robot [] h2;
 	
+	RobotHudra h3;
+	
 	
 	public Robot [] createMyHydra1(){
 		Robot [] h1 = new Robot[5];
 		
 		
-		for (int i = 0; i < 4; i ++){
+		for (int i = 0; i < 5; i ++){
 			
 		
 		    h1 [i] = new RobotA();
@@ -33,8 +35,14 @@ public class Factory {
 		return h2;
 	}
 	
-	
-	
+	public static void mesage(Robot [] h1){
+		for(int i = 0; i != h1.length; i ++){
+			System.out.println(h1[i].toString());
+		}
+		
+		
+	}
+
 }
 
 

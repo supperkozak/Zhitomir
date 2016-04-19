@@ -2,7 +2,12 @@
 public class RobotA extends Robot {
 
 	
-	private String mesage = "Hello I am A";
+	@Override
+	public String toString() {
+		return getMesage() + ", my mass is " + getMassa()+ ", my speed is" + getSpeed() + ", my height is" + getHeight();
+	}
+
+	private String mesage = "Hello I am robot A";
 
 		public String getMesage() {
 			return mesage;
