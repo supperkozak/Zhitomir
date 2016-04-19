@@ -1,28 +1,13 @@
 
 public class RobotA extends Robot {
 
-	
 	@Override
-	public String toString() {
-		return getMesage() + ", my mass is " + getMassa()+ ", my speed is" + getSpeed() + ", my height is" + getHeight();
+	public void message() {
+		System.out.println("I am A Robot");
+	}
+	
+	public void test(){
+		System.out.println("Robot a test");
 	}
 
-	private String mesage = "Hello I am robot A";
-
-		public String getMesage() {
-			return mesage;
-		}
-
-		public void setMesage(String mesage) {
-			this.mesage = mesage;
-		}
-
-		public RobotA() {
-			super();
-			// TODO Auto-generated constructor stub
-		}
-		
-		
-	}
-
-
+}

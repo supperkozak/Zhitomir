@@ -10,6 +10,7 @@ public abstract class Robot {
 		this.speed = speed;
 		this.height = height;
 	}
+	
 	public Robot() {
 		super();
 		this.massa = Math.random()*100.0;
@@ -33,6 +34,13 @@ public abstract class Robot {
 	}
 	public void setHeight(double height) {
 		this.height = height;
+	}
+	
+	public abstract void message();
+	
+	@Override
+	public String toString() {
+		return "Robot [massa=" + massa + ", speed=" + speed + ", height=" + height + "]";
 	}
 	
 
